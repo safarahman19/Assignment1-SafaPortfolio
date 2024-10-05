@@ -1,0 +1,88 @@
+<!DOCTYPE html> 
+<!--Declares a HTML5 document-->
+<html lang="en"> 
+<!--Root element of an HTML page and language is set to English-->
+  <head>
+<!--Contains mets info about this HTML page-->
+    <meta charset="UTF-8">
+<!--Is an HTML tag that allows characters outside ASCII chars for webpage-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Makes sure the viewport for the webpage is consistant on every device, initial scale (zoom level) set to default (1, device width which adjusts to the device screen-->
+    <link rel="stylesheet" href="style.css">
+    <title>Safa Rahman's Portfolio</title>
+<!--Defines the title for the webpage page, appears in browser tab-->
+</head>
+<body>
+<!--Defines the documents body, is a container-->
+    <header>
+        <nav>
+<!--Defines a set of navigation links for each section-->
+            <ul>
+<!--ul tag defines an unordered list-->
+              <li>
+                <a href="index.html">Home</a>
+<!--Lists item and links to the homepage-->
+              </li>  
+              <li>
+                <a href="AboutMe.html">About Me</a>
+<!--Lists item and links to the about me page-->
+              </li>
+              <li>
+                <a href="Projects.html">Projects</a>
+<!--Lists item and links to the project page-->
+              </li>
+              <li>
+                <a href="ContactMe.html">Contact Me</a>
+<!--Lists item and links to the contact me page-->
+              </li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+
+        <h1>My Projects</h1>
+        <div class="projects-container">
+            <div class="project-card" onclick="toggleDescription(this)">
+                <div class="project-icon">
+                    <img src="Images/tiny-women-near-obese-chart-scales-isolated-flat-vector-illustration-cartoon-female-characters-diet-using-weight-control-with-bmi-body-mass-index-medical-fitness-exercise-concept_74855-10177.avif" alt="Project 1 icon" class="project-image">
+                </div>
+                <h3>BMI Calculator</h3>
+                <p class="project-description" style="display: none;">One of my projects was to calculate a persons BMI, 
+                    after the calculation is made it displays whether you are underweight, 
+                    a healthy weight, or overweight</p>
+            </div>
+            <div class="project-card" onclick="toggleDescription(this)">
+                <div class="project-icon">
+                    <img src="Images/433-4331532_finance-hd-png-download.png" alt="Project 2 Icon" class="project-image">
+                </div>
+                <h3>Finances</h3>
+                <p class = "project-description" style="display: none;">This project calculated a persons commission and net salary. 
+                    From the rest of the data given by the user, I calculate the total earning</p>
+            </div>
+            <div class="project-card" onclick="toggleDescription(this)">
+                <div class="project-icon">
+                    <img src="Images/pngtree-programmer-woman-vector-programmer-workspace-working-on-internet-using-laptop-cartoon-png-image_1887006.jpg" alt="Project 3 Icon" class="project-image">
+                </div>
+                <h3>Encryption</h3>
+            <p class="project-description" style="display: none;">This program developed a game that takes english words and 
+            forms them into secret codes by method of encryption. 
+            The program implements substitution, playfair, caesar, transposition,
+            product, and RSA ciphers to encrypt and decrypt the messages</p>
+        </div>
+    </div>
+</main>
+
+<script>
+    function toggleDescription(card) {
+        const description = card.querySelector('.project-description');
+        console.log(description);
+        if (description.style.display === 'none' || description.style.display === '') {
+            description.style.display = 'block';
+        } else {
+            description.style.display = 'none';
+        }
+    }
+</script>
+</body>
+</html>

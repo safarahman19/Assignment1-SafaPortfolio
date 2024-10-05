@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<!--Declares a HTML5 document-->
+<html lang="en"> 
+<!--Root element of an HTML page and language is set to English-->
+  <head>
+<!--Contains mets info about this HTML page-->
+    <meta charset="UTF-8">
+<!--Is an HTML tag that allows characters outside ASCII chars for webpage-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Makes sure the viewport for the webpage is consistant on every device, initial scale (zoom level) set to default (1, device width which adjusts to the device screen-->
+    <link rel="stylesheet" href="style.css">
+    <title>Safa Rahman's Portfolio</title>
+<!--Defines the title for the webpage page, appears in browser tab-->
+</head>
+<body>
+<!--Defines the documents body, is a container-->
+    <header>
+        <nav>
+<!--Defines a set of navigation links for each section-->
+            <ul>
+<!--ul tag defines an unordered list-->
+              <li>
+                <a href="index.html">Home</a>
+<!--Lists item and links to the homepage-->
+              </li>  
+              <li>
+                <a href="AboutMe.html">About Me</a>
+<!--Lists item and links to the about me page-->
+              </li>
+              <li>
+                <a href="Projects.html">Projects</a>
+<!--Lists item and links to the project page-->
+              </li>
+              <li>
+                <a href="ContactMe.html">Contact Me</a>
+<!--Lists item and links to the contact me page-->
+              </li>
+            </ul>
+        </nav>
+    </header>
+
+<main>
+    <h1>About Me</h1>
+    <div class="profile-container">
+        <div class="profile-photo-container">
+            <img src="Images/IMG_9641.jpg" alt="Safa Rahman" class="profile-photo">
+            <p>Safa Rahman</p>
+        </div>
+        <section class="introduction">
+            <h2>Introduction</h2>
+            <p>Hi Reader! My name is Safa Rahman and i've just begun my second year at Ontario Tech University
+        this Fall of 2024. I am a Technology Management Major and am very excited to see what knowledge
+        I can acquire this semester. As for my future plans, I am hoping to find an internship in the IT field 
+        and once I join the workforce am hoping to pursue a job in cybersecurity or UX designing, anything tech related really. </p>
+        </section>
+    </div>
+    <section class="intro-video">
+        <h2>My Introduction</h2>
+        <video controls poster="Images/maxresdefault.jpg" width="640" height="360">
+            <source src="Images/What_is_UX_Design.mp4" type="video/mp4">
+            Your browser does not support this video.
+        </video>
+    </section>
+</main>

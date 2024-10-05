@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+<!--Is an HTML tag that allows characters outside ASCII chars for webpage-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Makes sure the viewport for the webpage is consistant on every device, initial scale (zoom level) set to default (1, device width which adjusts to the device screen-->
+        <link rel="stylesheet" href="style.css">
+        <title>Contact Me - Safa Rahman</title>
+</head>
+
+    <body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+        <!--Lists item and links to the homepage-->
+                </li>  
+                <li>
+                    <a href="AboutMe.html">About Me</a>
+        <!--Lists item and links to the about me page-->
+                </li>
+                <li>
+                    <a href="Projects.html">Projects</a>
+        <!--Lists item and links to the project page-->
+                </li>
+                <li>
+                    <a href="ContactMe.html">Contact Me</a>
+        <!--Lists item and links to the contact me page-->
+                </li>
+            </ul>
+        </nav>
+    </header>
+<main>
+        <h1>Contact Me</h1>
+        <p>Get in touch with Safa Rahman</p>
+        <form action="ThankYou.html" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br>
+
+            <label for="comments">Comments</label>
+            <textarea id="comments" name="comments" required></textarea><br>
+
+            <button type="submit">Submit</button>
+        </form>
+</main>
+</body>
+</html>
